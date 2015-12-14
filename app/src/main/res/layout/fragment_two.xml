@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.weathertoday.TwoFragment"
+    android:background="@drawable/pattern2">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today Weather"
+        android:id="@+id/todaybutton2"
+        android:onClick="onClick"
+        android:background="?attr/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/first2"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/todaybutton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp2"
+            android:textSize="40dp"
+            android:textColor="?attr/colorPrimary"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/clothes"
+            android:textSize="30dp"
+            android:textColor="?attr/colorPrimary"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
